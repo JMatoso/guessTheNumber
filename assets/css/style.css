@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'CircularMedium';
+    src: url("../fonts/circular/CircularStd-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url("../fonts/circular/CircularStd-Book.ttf");
+}
+
+@font-face {
+    font-family: 'Material';
+    src: url("../fonts/material/MaterialIcons-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Circular';
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, #2196fa, #43cea2);
+    background: linear-gradient(to right, #2196fa, #43cea2); 
+}
+.game-text{
+    font-family: 'Circular' !important;
+}
+.timer{
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, tomato, #43cea2);
+    background: linear-gradient(to right, tomato, #43cea2);
+    border-radius: 100px;
+    padding: 0;
+    cursor: progress;
+}
+.content{
+    border-radius: 4px;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 50%;
+    padding: 15px;
+}
+.game-content{
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+    width: 70%;
+}
+.number-set{
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all .2s;
+    border-color: #fff;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.number-set:hover{
+    border: 1px solid #ddd;
+    background-color: rgba(206, 206, 206, .3);
+}
+.bd{
+    display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.bd-points{
+    background-color: #ffc107;
+}
+.bd-lives{
+    background-color: tomato;
+}
+.text-tomato{
+    color: tomato !important;
+}
+.dialog{
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+}
+.message-box{
+    width: 40%;
+    margin:150px auto;
+}
+.right{
+    padding: 10px;
+    border-radius: 10px;
+    color: white !important;
+    background-color: #54be6b;
+}
+.wrong{
+    padding: 10px;
+    border-radius: 10px;
+    color: white !important;
+    background-color: tomato;
+}
+@media (max-width: 724px) {
+    .content{
+        width: 100%;
+    }
+    .btn-opt{
+        width: 75% !important;
+    }
+}
